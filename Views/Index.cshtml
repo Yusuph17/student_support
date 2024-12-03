@@ -1,0 +1,18 @@
+@using StudentSupportApp.Models
+@model Student
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <form asp-action="Register" method="post">
+        <input type="text" name="FullName" placeholder="Full Name" required />
+        <input type="email" name="Email" placeholder="Email" required />
+        <input type="text" name="Course" placeholder="Course" required />
+        <input type="text" name="AcademicYear" placeholder="Academic Year" required />
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
