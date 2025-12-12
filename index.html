@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-
-    <!-- Link CSS -->
+    <title>Mniko Page</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="logo">Mniko</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        Navbar
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-
-        <!-- Left side -->
-        <div class="left-box">
-            <img src="mniko.png" alt="Landing Image">
-            <h2>Welcome Message</h2>
+    <main>
+        <div class="content">
+            <img src="mniko.png" alt="Mniko Image" class="main-image">
             <p>
-                This is your landing page welcome message.  
-                Write any text you want here to explain your page.
+                Welcome to Mniko's amazing site! Here we share stories, artwork, and insights
+                that inspire creativity and innovation. Mniko is a place where imagination meets
+                passion, bringing ideas to life in a stunning and interactive way.
+                Explore more to see what makes Mniko unique and unforgettable.
             </p>
         </div>
 
-        <!-- Right side (Form) -->
-        <div class="form-box">
-            <h2>Request Form</h2>
-
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Subject">
-            <button>Submit</button>
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-
-    </div>
-
+    </main>
 </body>
 </html>
