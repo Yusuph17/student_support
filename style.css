@@ -1,70 +1,104 @@
-body {
+/* Reset and basic styles */
+* {
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background: #f7f7f7;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navbar */
-.navbar {
-    background: #0077b6;
-    color: white;
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: 600;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
 }
 
-/* Page Layout */
-.container {
+/* Header styles */
+header {
+    background-color: #003366;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    align-items: center;
+    padding: 15px 50px;
 }
 
-/* Left side (Pic + message) */
-.left-box {
-    width: 48%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.left-box img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.left-box h2 {
-    color: #0077b6;
-    margin-top: 0;
-}
-
-/* Right side (form) */
-.form-box {
-    width: 48%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input, button {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-button {
-    background: #0077b6;
-    color: white;
-    cursor: pointer;
+header .logo {
+    font-size: 24px;
     font-weight: bold;
+    color: #ffcc00;
 }
 
-button:hover {
-    background: #005f8a;
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    background-color: #ffcc00;
+    color: #003366;
+    border-radius: 5px;
+}
+
+/* Main section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 50px;
+}
+
+/* Image and text */
+.content {
+    max-width: 600px;
+}
+
+.content img.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+/* Form */
+.form-container {
+    background-color: #262626;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.form-container input::placeholder {
+    color: #aaaaaa;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #003366;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #e6b800;
 }
